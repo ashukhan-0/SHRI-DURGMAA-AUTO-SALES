@@ -1,0 +1,14 @@
+import Home from "./pages/Home";
+import BookBike from "./pages/BookBike";
+
+function App() {
+  return (
+    <div>
+      <Home />
+      <hr />
+      <BookBike />
+    </div>
+  );
+}
+
+export default App;

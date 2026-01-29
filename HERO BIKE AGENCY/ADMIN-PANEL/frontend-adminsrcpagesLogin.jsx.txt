@@ -1,0 +1,21 @@
+function Login({ onLogin }) {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // demo login, always success
+    onLogin();
+  };
+
+  return (
+    <div>
+      <h1>Shri Durgmaa Auto Sales – Hero Agency</h1>
+      <h2>Admin Login</h2>
+      <form onSubmit={handleSubmit}>
+        <input placeholder="Username" /><br /><br />
+        <input type="password" placeholder="Password" /><br /><br />
+        <button>Login</button>
+      </form>
+    </div>
+  );
+}
+
+export default Login;

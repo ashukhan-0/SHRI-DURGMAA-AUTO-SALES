@@ -1,0 +1,18 @@
+function Home() {
+  return (
+    <div>
+      <h1>Shri Durgmaa Auto Sales – Hero Agency</h1>
+      <p>Authorized Hero MotoCorp Dealer</p>
+      <p>Address: Pipariya Dhani, Mohammdi Road</p>
+
+      <h2>Available Bikes</h2>
+      <ul>
+        <li>Hero Splendor</li>
+        <li>Hero Passion</li>
+        <li>Hero HF Deluxe</li>
+      </ul>
+    </div>
+  );
+}
+
+export default Home;

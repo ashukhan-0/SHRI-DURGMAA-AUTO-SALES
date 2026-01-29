@@ -1,0 +1,31 @@
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+function Dashboard() {
+  const [bookings, setBookings] = useState([]);
+
+  useEffect(() => {
+    // backend se bookings fetch
+    axios.get("http://localhost:5000/admin/bookings")
+      .then(res => setBookings(res.data))
+      .catch(err => console.error(err));
+  }, []);
+
+  return (
+    <div>
+      <h1>Admin Dashboard – Shri Durgmaa Auto Sales</h1>
+      <h2>Bookings List</h2>
+      <ul>
+        {bookings.length === 0 ? (
+          <li>No bookings yet</li>
+        ) : (
+          bookings.map((b, i) => (
+            <li key={i}>{b.name} – {b.mobile} – {b.bike}</li>
+          ))
+        )}
+      </ul>
+    </div>
+  );
+}
+
+export default Dashboard;

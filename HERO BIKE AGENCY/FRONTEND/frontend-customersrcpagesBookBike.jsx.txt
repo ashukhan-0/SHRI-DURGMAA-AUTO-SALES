@@ -1,0 +1,16 @@
+function BookBike() {
+  return (
+    <div>
+      <h2>Book a Bike</h2>
+
+      <form>
+        <input placeholder="Your Name" /><br /><br />
+        <input placeholder="Mobile Number" /><br /><br />
+        <input placeholder="Bike Name" /><br /><br />
+        <button>Submit Booking</button>
+      </form>
+    </div>
+  );
+}
+
+export default BookBike;
